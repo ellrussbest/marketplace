@@ -1,6 +1,6 @@
 {
   "homepage": "https://ellrussbest.github.io/marketplace",
-  "name": "near-marketplace",
+  "name": "marketplace",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
