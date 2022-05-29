@@ -17,7 +17,7 @@ It was built using these below technologies:
 - Serialization of the data using Borsh - Different data required different serialization and I encountered multiple serialization error.
 
 ## Installing and running the program
-you can find the program from the following [githubpage:](www.githubpage.git). You could also choose to clone the program from the following [github repository](www.githubrepo.org).
+you can find the program from the following [githubpage:](https://ellrussbest.github.io/marketplace/). You could also choose to clone the program from the following [github repository](https://github.com/ellrussbest/marketplace/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
