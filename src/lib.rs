@@ -23,8 +23,8 @@ impl ProductList {
         // Declaration and initialization of an unordered map variable that wil be used to store products and their id's
         let mut productlist_util: UnorderedMap<String, Product> = UnorderedMap::new(b"s".to_vec());
 
-        // List of products that will be stored in the hashmap
-        let product1 = Product {
+                // List of products that will be stored in the hashmap
+                let product1 = Product {
                     id: String::from("product1"),
                     name: String::from("Lasagna"),
                     description: String::from("Lean ground beef, ricotta cheese with fresh mozzarella"),
@@ -285,6 +285,27 @@ impl ProductList {
         product 
     }
 
+    // A setter function for setting products
+    #[allow(non_snake_case)]
+    pub fn setProduct(&mut self, id: String,  product: Product) {
+        self.product_list.insert(&id, &product);
+    }
+    // #[allow(non_snake_case)]
+    // pub fn setProduct(&mut self, id: String, name: String, description: String, image: String, location: String, price: u128,) {
+    //     let product = Product {
+    //         id,
+    //         name,
+    //         description,
+    //         image,
+    //         location,
+    //         price,
+    //         owner: env::signer_account_id(),
+    //         sold: 0,
+    //     };
+    //     self.product_list.insert(&product.id, &product);
+    // }
+
+
     // function used to execute the buying of the product
     #[allow(non_snake_case)]
     pub fn buyProduct(&mut self, id: String) {
@@ -368,5 +389,35 @@ mod tests {
         let x = productlist.getProducts();
 
         assert_eq!(20, x.len());
+    }
+
+    #[test]
+    fn set_product() {
+        let context = get_context(vec![], false);
+        testing_env!(context);
+
+        let mut productlist = ProductList::new();
+
+        let product1 = Product {
+            id: String::from("product22"),
+            name: String::from("Lasagna"),
+            description: String::from("Lean ground beef, ricotta cheese with fresh mozzarella"),
+            image: String::from("https://i.imgur.com/b3IMhwX.jpeg"),
+            location: String::from("Nairobi, Kenya"),
+            price: 1000000000000000000000000,
+            owner: env::signer_account_id(),
+            sold: 0,
+        };
+
+        productlist.setProduct("product22".to_string(), product1);
+
+
+        // productlist.setProduct(String::from("product22"), String::from("Chinese food"), String::from("Lean ground beef, ricotta cheese with fresh mozzarella"),
+        // String::from("https://i.imgur.com/Mufznwt.jpeg"), String::from("Nairobi, Kenya"), 1000000000000000000000000);
+
+        let prod = productlist.getProduct("product22".to_string());
+
+        assert_eq!(prod.id, "product22".to_string());
+        
     }
 }
