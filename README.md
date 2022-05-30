@@ -14,7 +14,7 @@ It was built using these below technologies:
 > I used **ReactJS** to build the front end and interact with the **NEAR-API-JS (JavaScript Library)**
 
 ## Challenges encoutered
-- Serialization of the data using Borsh - Different data required different serialization and I encountered multiple serialization error.
+- Serialization of the data using Borsh - Different data required different serialization and I encountered multiple serialization errors before finally knowing what to exactly.
 
 ## Installing and running the program
 you can find the program from the following [githubpage:](https://ellrussbest.github.io/marketplace/). You could also choose to clone the program from the following [github repository](https://github.com/ellrussbest/marketplace/).
