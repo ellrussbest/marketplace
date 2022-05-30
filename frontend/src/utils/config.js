@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME || "marketplace.awry.testnet";
+const CONTRACT_NAME = process.env.CONTRACT_NAME || "market.awry.testnet";
 
 function environment(env) {
   switch (env) {

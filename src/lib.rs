@@ -31,7 +31,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/b3IMhwX.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -42,7 +42,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/B7HwmYG.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -53,7 +53,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/Qsj69aw.jpg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -64,7 +64,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/cxSwwus.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -75,7 +75,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/3eQIKiw.jpg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -86,7 +86,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/nWJPyff.jpg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -97,7 +97,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/XnwLZEw.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -108,7 +108,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/QwEq1g2.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -119,7 +119,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/yPreV19.png"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -130,7 +130,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/0zn0yRS.jpg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -141,7 +141,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/hrbtods.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -152,7 +152,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/VXvenZW.jpg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -163,7 +163,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/ytUBumj.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -174,7 +174,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/3HcUUmV.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -185,7 +185,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/dhZsowZ.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -196,7 +196,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/kLpdqpz.gif"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -207,7 +207,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/R5LzMw0.jpg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -218,7 +218,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/LNYeC11.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -229,7 +229,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/8rLCoRt.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
                 
@@ -240,7 +240,7 @@ impl ProductList {
                     image: String::from("https://i.imgur.com/Mufznwt.jpeg"),
                     location: String::from("Nairobi, Kenya"),
                     price: 1000000000000000000000000,
-                    owner: env::signer_account_id(),
+                    owner: env::current_account_id(),
                     sold: 0,
                 };
         
@@ -285,39 +285,17 @@ impl ProductList {
         product 
     }
 
-    // A setter function for setting products
-    #[allow(non_snake_case)]
-    pub fn setProduct(&mut self, id: String,  product: Product) {
-        self.product_list.insert(&id, &product);
-    }
-    // #[allow(non_snake_case)]
-    // pub fn setProduct(&mut self, id: String, name: String, description: String, image: String, location: String, price: u128,) {
-    //     let product = Product {
-    //         id,
-    //         name,
-    //         description,
-    //         image,
-    //         location,
-    //         price,
-    //         owner: env::signer_account_id(),
-    //         sold: 0,
-    //     };
-    //     self.product_list.insert(&product.id, &product);
-    // }
-
-
     // function used to execute the buying of the product
     #[allow(non_snake_case)]
+    #[payable]
     pub fn buyProduct(&mut self, id: String) {
         let mut product = self.getProduct(id);
-        if product.price > env::account_balance() {
-            let log_message = format!("You don't have enough cash, your account balance is {}", env::account_balance());
-            env::log(log_message.as_bytes());
-            env::panic(log_message.as_bytes());
-        }
+        
+        let promise_index = env::promise_batch_create(env::current_account_id());
+        env::promise_batch_action_transfer(promise_index, product.price);
+
         product.incrementSoldAmount();
-        self.product_list.insert(&product.id, &product); 
-        env::promise_batch_create(&product.owner);     
+        self.product_list.insert(&product.id, &product);      
     }
 
     // A getter function used to get all the products from the blockchain
@@ -356,7 +334,7 @@ mod tests {
             input,
             block_index: 0,
             block_timestamp: 0,
-            account_balance: 300,
+            account_balance: 0,
             account_locked_balance: 0,
             storage_usage: 0,
             attached_deposit: 0,
@@ -389,35 +367,5 @@ mod tests {
         let x = productlist.getProducts();
 
         assert_eq!(20, x.len());
-    }
-
-    #[test]
-    fn set_product() {
-        let context = get_context(vec![], false);
-        testing_env!(context);
-
-        let mut productlist = ProductList::new();
-
-        let product1 = Product {
-            id: String::from("product22"),
-            name: String::from("Lasagna"),
-            description: String::from("Lean ground beef, ricotta cheese with fresh mozzarella"),
-            image: String::from("https://i.imgur.com/b3IMhwX.jpeg"),
-            location: String::from("Nairobi, Kenya"),
-            price: 1000000000000000000000000,
-            owner: env::signer_account_id(),
-            sold: 0,
-        };
-
-        productlist.setProduct("product22".to_string(), product1);
-
-
-        // productlist.setProduct(String::from("product22"), String::from("Chinese food"), String::from("Lean ground beef, ricotta cheese with fresh mozzarella"),
-        // String::from("https://i.imgur.com/Mufznwt.jpeg"), String::from("Nairobi, Kenya"), 1000000000000000000000000);
-
-        let prod = productlist.getProduct("product22".to_string());
-
-        assert_eq!(prod.id, "product22".to_string());
-        
     }
 }
