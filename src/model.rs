@@ -10,7 +10,7 @@ use near_sdk::env;
 #[derive(Serialize, Deserialize, BorshDeserialize, BorshSerialize)]
 #[serde(crate = "near_sdk::serde")]
 pub struct Product {
-    pub id: String,
+    pub id: String, // they are publicly accessible
     pub name: String,
     pub description: String,
     pub image: String,
