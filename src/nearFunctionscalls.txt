@@ -1,0 +1,20 @@
+To save us some time, I created the function calls that i will use:
+
+
+// used to creat a subAccount within my masterAccount 
+near create-account marketcontract.awry.testnet --masterAccount awry.testnet --initialBalance 30
+
+// used to deploy our contract to the NEAR protocol
+near deploy --wasmFile target/wasm32-unknown-unknown/release/marketplace.wasm --accountId=marketcontract.awry.testnet
+
+// used to initialize the contract
+near call marketcontract.awry.testnet new --accountId=awry.testnet
+
+// used to get a specific product from the NEAR protocol
+near view marketcontract.awry.testnet getProduct '{"id": "product20"}' --accountId awry.testnet
+
+// used to get all the products from the NEAR protocol
+near view marketcontract.awry.testnet getProducts --accountId awry.testnet
+
+// used to carry out a purchase transaction
+near call marketcontract.awry.testnet buyProduct '{"id": "product1"}' --accountId awry.testnet

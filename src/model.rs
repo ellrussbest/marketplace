@@ -6,6 +6,7 @@ use near_sdk::env;
 
 /// Implements both `serde` and `borsh` serialization.
 /// `serde` is typically useful when returning a struct in JSON format for a frontend.
+// This Struct should act as a template definition to all my products
 #[derive(Serialize, Deserialize, BorshDeserialize, BorshSerialize)]
 #[serde(crate = "near_sdk::serde")]
 pub struct Product {
@@ -19,6 +20,8 @@ pub struct Product {
     pub sold: u32,
 }
 
+
+// Implementation of the above struct defitinition
 impl Product {
 
     // increments the sold amount when a specific product is bought

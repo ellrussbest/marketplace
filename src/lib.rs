@@ -1,4 +1,6 @@
+// Importing the model module
 mod model;
+// Using the Product struct withint the lib.rs module
 use model::Product;
 
 /// Import `borsh` from `near_sdk` crate 
