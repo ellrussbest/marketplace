@@ -286,12 +286,19 @@ impl ProductList {
     }
 
     // function used to execute the buying of the product
+    // Still a work in progress though
     #[allow(non_snake_case)]
     #[payable]
     pub fn buyProduct(&mut self, id: String) {
         let mut product = self.getProduct(id);
-        
+
         let promise_index = env::promise_batch_create(env::current_account_id());
+        let callback_promise_id = env::promise_batch_then(
+            promise_index,
+            env::current_account_id(),
+        );
+
+        env::promise_return(callback_promise_id);
         env::promise_batch_action_transfer(promise_index, product.price);
 
         product.incrementSoldAmount();
@@ -334,7 +341,7 @@ mod tests {
             input,
             block_index: 0,
             block_timestamp: 0,
-            account_balance: 0,
+            account_balance: 1_000_000_000_000_000_000_000_000,
             account_locked_balance: 0,
             storage_usage: 0,
             attached_deposit: 0,
@@ -347,7 +354,6 @@ mod tests {
     }
     
     #[test] 
-    #[should_panic]
     fn buy_product() {
         let context = get_context(vec![], false);
         testing_env!(context);
